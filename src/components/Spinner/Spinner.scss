@@ -1,0 +1,13 @@
+.Spinner {
+  text-align: center;
+  margin-top: 200px;
+  position: relative;
+
+  .loading {
+    position: absolute;
+    font-family: "Arvo", serif;
+    color: white;
+    left: 500px;
+    bottom: 2px;
+  }
+}
