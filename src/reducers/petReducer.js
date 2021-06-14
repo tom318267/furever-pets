@@ -1,10 +1,4 @@
 import { LIKE_PET, GET_PETS, GET_PET } from "../actions/types";
-// import silvia from "../assets/silvia.png";
-// import buddy from "../assets/buddy.png";
-// import charlie from "../assets/charlie.png";
-// import chloe from "../assets/chloe.png";
-// import coda from "../assets/coda.png";
-// import bella from "../assets/bella.png";
 
 export const initialState = {
   pets: [],

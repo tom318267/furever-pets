@@ -9,6 +9,7 @@ import Vetpage from "./components/Vetpage/Vetpage";
 // Redux
 import { Provider } from "react-redux";
 import store from "./store";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
               <Route exact path="/" component={Homepage} />
               <Route exact path="/find-pet" component={FindPet} />
               <Route exact path="/vet-services" component={Vetpage} />
+              <Route exact path="/contact" component={Contact} />
             </Switch>
           </Router>
         </Provider>

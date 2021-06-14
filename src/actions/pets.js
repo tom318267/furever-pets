@@ -1,4 +1,4 @@
-import { GET_PETS, LIKE_PET, GET_PET } from "../actions/types";
+import { GET_PETS, LIKE_PET } from "../actions/types";
 import axios from "axios";
 
 // Get Pets
@@ -6,7 +6,6 @@ export const getPets = () => async (dispatch) => {
   try {
     const res = await axios.get("https://furever-pets-api.herokuapp.com/pets");
     const data = await res.data;
-    console.log(res);
 
     dispatch({
       type: GET_PETS,

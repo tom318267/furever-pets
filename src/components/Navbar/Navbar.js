@@ -47,7 +47,10 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link hvr-underline-from-center" href="#">
+              <Link
+                className="nav-link hvr-underline-from-center"
+                to="/contact"
+              >
                 Contact
               </Link>
             </li>
