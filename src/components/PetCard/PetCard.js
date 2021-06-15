@@ -4,7 +4,19 @@ import { addLike } from "../../actions/pets";
 import ellipse from "../../assets/ellipse.png";
 import "./PetCard.scss";
 
-const PetCard = ({ id, name, img, breed, age, info, story, like, addLike }) => {
+const PetCard = ({
+  id,
+  name,
+  img,
+  breed,
+  age,
+  info,
+  story,
+  like,
+  addLike,
+  selectedPets,
+}) => {
+  console.log(selectedPets);
   return (
     <div className="PetCard">
       <div className="card border-0">
@@ -15,12 +27,12 @@ const PetCard = ({ id, name, img, breed, age, info, story, like, addLike }) => {
           }}
           className="circle-div"
         >
-          <img src={ellipse} alt="" className="circle" />
+          {/* <img src={ellipse} alt="" className="circle" />
           {like ? (
             <i className="fas fa-heart"></i>
           ) : (
             <i className="far fa-heart"></i>
-          )}
+          )} */}
         </div>
         <div className="card-body">
           <h2>{name}</h2>
@@ -37,4 +49,8 @@ const PetCard = ({ id, name, img, breed, age, info, story, like, addLike }) => {
   );
 };
 
-export default connect(null, { addLike })(PetCard);
+const mapStateToProps = (state) => ({
+  selectedPets: state.selectedPets,
+});
+
+export default connect(mapStateToProps, { addLike })(PetCard);
