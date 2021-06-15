@@ -30,7 +30,7 @@ const Contact = () => {
           </div>
           <div class="form-group">
             <label for="body">Message</label>
-            <textarea name="" id="body" cols="30" rows="10"></textarea>
+            <textarea id="body" cols="30" rows="5"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary">

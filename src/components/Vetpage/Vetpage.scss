@@ -1,14 +1,19 @@
 .Vetpage {
   width: 100vw;
   height: auto;
-  background-color: #9fd772;
   margin-top: -361px;
-  padding-bottom: 350px;
   position: relative;
+  font-family: "Arvo", serif;
+
+  .vet-overlay {
+    background: url("../../assets/medical.png");
+    padding-bottom: 350px;
+  }
 
   .container {
     padding-top: 455px;
     display: flex;
+
     .vet {
       width: 400px;
       align-self: center;

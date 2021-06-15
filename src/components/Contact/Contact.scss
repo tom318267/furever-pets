@@ -3,7 +3,7 @@
   height: 100vh;
   background-color: #6ed4ce;
   margin-top: -361px;
-  padding-top: 553px;
+  padding-top: 530px;
   padding-bottom: 850px;
   font-family: "Arvo", serif;
   position: relative;
@@ -25,7 +25,7 @@
       img {
         position: absolute;
         width: 430px;
-        bottom: 521px;
+        bottom: 441px;
 
         z-index: -1;
       }
@@ -36,8 +36,11 @@
     width: 80%;
     margin: 0 auto;
 
-    textarea {
-      width: 100%;
+    .form-group {
+      textarea {
+        width: 100%;
+        padding: 20px;
+      }
     }
 
     .btn-primary {
